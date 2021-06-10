@@ -27,9 +27,15 @@ h1{
     width: 30%;
 }
 
+.descripciones:hover{
+    font-size: 16px;
+    opacity: 1;
+}
+
 .descripciones{
     font-size: 16px;
     display: none;
+    opacity: 0;
 }
 
 header{
@@ -62,9 +68,20 @@ article{
     text-align: center;
 }
 
-.truck-icon{
-    color: #39b54a;
+.contenedor-delivery{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid green;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    color: green;
+    font-size: 20px;
 }
+
+
 
 .icono-footer{
     size: 2em;
@@ -155,26 +172,48 @@ div{
     }
 }
 
-.contenedor-productos{
+.contenedor-productos, .contenedor-productos2{
     display: flex;
     width: 100vw;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 @media (min-width: 768px){
-    .contenedor-productos article{
+    .contenedor-productos article, .contenedor-productos2 article{
         width: 50%;
     }
 }
 
 @media (min-width: 1200px){
-    .contenedor-productos article{
+    .contenedor-productos article, .contenedor-productos2 article{
         width: 25%;
     }
 }
 
-
-
 .imagen-productos img{
     max-width: 100%;
+}
+
+
+
+
+
+.contenedor-logo-búsqueda{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+
+.logo{
+    width: 50%;
+}
+
+.logo img{
+    max-width: 100%;
+}
+
+.navegacion{
+    width: 50%;
+    height: 40px;
 }
