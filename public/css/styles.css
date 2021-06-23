@@ -272,6 +272,10 @@ h5{
     background-color: #0022AA;
 }
 
+.caja-grande-prod{
+transition: box-shadow 0.5s;
+}
+
 @media (max-width: 361px) {
     .header-nav{
         display: none;
@@ -287,11 +291,12 @@ h5{
     }
 }
 
+
 @media (min-width: 361px){
     .burger-menu{
         display: none;
     }
-    .caja-grande-prod{
+    .caja-grande-prod:hover{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
   
