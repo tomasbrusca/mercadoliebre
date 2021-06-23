@@ -8,7 +8,7 @@ const app = express ();
 const publicPath = path.resolve(__dirname,"./public");
 app.use(express.static(publicPath));
 
-app.listen(4000, () => console.log('Ha sido exitoso'));
+app.listen(process.env.PORT ||4000, () => console.log('Ha sido exitoso'));
 
 app.get('/contactos', function(req, res){
     res.send('Tomás Brusca')
